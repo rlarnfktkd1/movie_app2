@@ -8,31 +8,39 @@ export default class extends React.Component {
     upComing: null,
     popular: null,
     topRated: null,
+    filter: "",
     error: null,
     loading: true
   };
-
+  handleClick = value => {
+    this.setState({
+      filter: value
+    });
+  };
   async componentDidMount() {
     try {
       const {
         data: { results: nowPlaying }
       } = await moviesApi.nowPlaying();
       const {
-        data: { results: upcoming }
+        data: { results: upComing }
       } = await moviesApi.upcoming();
       const {
         data: { results: popular }
       } = await moviesApi.popular();
+      const {
+        data: { results: topRated }
+      } = await moviesApi.topRated();
       this.setState({
         nowPlaying,
-        upcoming,
-        popular
+        upComing,
+        popular,
+        topRated
       });
     } catch (error) {
       this.setState({
-        error: "Can't find movies information."
+        error: "Can't find movie information."
       });
-      console.log(error);
     } finally {
       this.setState({
         loading: false
@@ -40,14 +48,26 @@ export default class extends React.Component {
     }
   }
   render() {
-    const { nowPlaying, upComing, popular, error, loading } = this.state;
+    const {
+      nowPlaying,
+      upComing,
+      popular,
+      topRated,
+      error,
+      loading,
+      filter,
+      handleClick
+    } = this.state;
     return (
       <HomePresenter
         nowPlaying={nowPlaying}
         upComing={upComing}
         popular={popular}
+        topRated={topRated}
         error={error}
         loading={loading}
+        filter={filter}
+        handleClick={handleClick}
       />
     );
   }
