@@ -58,13 +58,28 @@ export default withRouter(({ location: { pathname } }) => (
       <Logo>Sangheon Movie</Logo>
     </SLink>
     <List>
-      <Item current={pathname === "/"}>
+      <Item
+        current={
+          pathname === "/" ||
+          pathname === "/filter/movie/now_playing" ||
+          pathname === "/filter/movie/popular" ||
+          pathname === "/filter/movie/top_rated" ||
+          pathname === "/filter/movie/upcoming"
+        }
+      >
         <SLink to="/">
           <i className="fas fa-film" />
           Movies
         </SLink>
       </Item>
-      <Item current={pathname === "/tv"}>
+      <Item
+        current={
+          pathname === "/tv" ||
+          pathname === "/filter/tv/popular" ||
+          pathname === "/filter/tv/top_rated" ||
+          pathname === "/filter/tv/airing_today"
+        }
+      >
         <SLink to="/tv">
           <i className="fas fa-tv" />
           TV

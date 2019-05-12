@@ -15,18 +15,18 @@ export default class extends React.Component {
     const {
       match: { url }
     } = this.props;
-    let value2 = url.split("/")[3];
+    let value1 = url.split("/")[3];
     try {
-      if (value2 === undefined) {
-        value2 = "popular";
+      if (value1 === undefined) {
+        value1 = "popular";
         const {
           data: { results: tvPresent }
-        } = await tvApi.tvPresent(value2);
+        } = await tvApi.tvPresent(value1);
         console.log(tvPresent);
       }
       const {
         data: { results: tvPresent }
-      } = await tvApi.tvPresent(value2);
+      } = await tvApi.tvPresent(value1);
       this.setState({
         tvPresent
       });
@@ -39,11 +39,11 @@ export default class extends React.Component {
         loading: false
       });
     }
-    if (value2 === "popular") {
+    if (value1 === "popular") {
       this.setState({
         title: "인기 TV"
       });
-    } else if (value2 === "top_rated") {
+    } else if (value1 === "top_rated") {
       this.setState({
         title: "높은 평점 TV"
       });
@@ -61,7 +61,6 @@ export default class extends React.Component {
         tvPresent={tvPresent}
         error={error}
         loading={loading}
-        ismovie={false}
       />
     );
   }

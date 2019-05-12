@@ -17,7 +17,9 @@ export default () => (
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/filter/movie/:category" exact component={Home} />
         <Route path="/tv" exact component={TV} />
+        <Route path="/filter/tv/:category" exact component={TV} />
         <Route path="/search" exact component={Search} />
         <Route path="/movie/:id" component={Detail} />
         <Route path="/show/:id" component={Detail} />
@@ -32,4 +34,3 @@ export default () => (
 // Switch는 오직 하나의 Route만 render 하게 해준다.
 
 /* 코드 첼린지 예정 */
-//  <Route path="/tv/popular" render={() => <h1>Popular</h1>} />

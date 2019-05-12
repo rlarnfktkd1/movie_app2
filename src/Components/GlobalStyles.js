@@ -6,6 +6,10 @@ const globalStyles = createGlobalStyle`
     a{
         text-decoration:none;
         color: inherit;
+        
+    }
+    li{
+        list-style:none;
     }
     *{
         box-sizing: border-box;
@@ -24,21 +28,12 @@ const globalStyles = createGlobalStyle`
         margin-right: 5px;
         text-shadow: rgb(34, 141, 255) 0px 0px 5px, rgb(34, 141, 255) 0px 0px 10px, rgb(34, 141, 255) 0px 0px 15px, rgb(255, 255, 255) 0px 0px 20px, rgb(255, 255, 255) 0px 0px 35px, rgb(34, 141, 255) 0px 0px 40px, rgb(34, 141, 255) 0px 0px 50px, rgb(34, 141, 255) 0px 0px 75px;
     }
-    .mainMenu .menuBar{
-        background: rgb(109,109,109);
-        display: none;
-        height:auto;
-        padding:0px;
-        margin:0px;
-        border:0px;
-        position:absolute;
-        top:50px;
-        width:200px;
-        z-index:200;
-        &:hover{
-            display:block;
-        }
+    .fa-youtube{
+        color: red
+        font-size: 24px;
+        margin-bottom: 18px;
     }
+
 `;
 
 export default globalStyles;
