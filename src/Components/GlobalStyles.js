@@ -29,7 +29,7 @@ const globalStyles = createGlobalStyle`
         text-shadow: rgb(34, 141, 255) 0px 0px 5px, rgb(34, 141, 255) 0px 0px 10px, rgb(34, 141, 255) 0px 0px 15px, rgb(255, 255, 255) 0px 0px 20px, rgb(255, 255, 255) 0px 0px 35px, rgb(34, 141, 255) 0px 0px 40px, rgb(34, 141, 255) 0px 0px 50px, rgb(34, 141, 255) 0px 0px 75px;
     }
     .fa-youtube{
-        color: red
+        color: red;
         font-size: 24px;
         margin-bottom: 18px;
     }

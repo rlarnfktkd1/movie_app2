@@ -30,6 +30,19 @@ export default class extends React.Component {
       this.setState({
         tvPresent
       });
+      if (value2 === "popular") {
+        this.setState({
+          title: "인기 TV"
+        });
+      } else if (value2 === "top_rated") {
+        this.setState({
+          title: "높은 평점 TV"
+        });
+      } else {
+        this.setState({
+          title: "오늘 방영 TV"
+        });
+      }
     } catch {
       this.setState({
         error: "Can't find TV Shows information"
@@ -37,19 +50,6 @@ export default class extends React.Component {
     } finally {
       this.setState({
         loading: false
-      });
-    }
-    if (value2 === "popular") {
-      this.setState({
-        title: "인기 TV"
-      });
-    } else if (value2 === "top_rated") {
-      this.setState({
-        title: "높은 평점 TV"
-      });
-    } else {
-      this.setState({
-        title: "오늘 방영 TV"
       });
     }
   }

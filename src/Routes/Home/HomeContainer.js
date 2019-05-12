@@ -33,6 +33,23 @@ export default class extends React.Component {
       this.setState({
         moviePresent
       });
+      if (value1 === "now_playing") {
+        this.setState({
+          title: "현재 상영중 영화"
+        });
+      } else if (value1 === "top_rated") {
+        this.setState({
+          title: "높은 평점 영화"
+        });
+      } else if (value1 === "popular") {
+        this.setState({
+          title: "인기 영화"
+        });
+      } else {
+        this.setState({
+          title: "개봉 예정 영화"
+        });
+      }
     } catch (error) {
       this.setState({
         error: "영화를 불러오지 못했습니다."
@@ -40,23 +57,6 @@ export default class extends React.Component {
     } finally {
       this.setState({
         loading: false
-      });
-    }
-    if (value1 === "now_playing") {
-      this.setState({
-        title: "현재 상영중 영화"
-      });
-    } else if (value1 === "top_rated") {
-      this.setState({
-        title: "높은 평점 영화"
-      });
-    } else if (value1 === "popular") {
-      this.setState({
-        title: "인기 영화"
-      });
-    } else {
-      this.setState({
-        title: "개봉 예정 영화"
       });
     }
   }

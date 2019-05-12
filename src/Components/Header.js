@@ -54,17 +54,21 @@ const SLink = styled(Link)`
 
 export default withRouter(({ location: { pathname } }) => (
   <Header>
-    <SLink to="/">
+    <SLink to="https://rlarnfktkd1.github.io/movie_app2/">
       <Logo>Sangheon Movie</Logo>
     </SLink>
     <List>
       <Item
         current={
-          pathname === "/" ||
-          pathname === "filter/movie/now_playing" ||
-          pathname === "filter/movie/popular" ||
-          pathname === "filter/movie/top_rated" ||
-          pathname === "filter/movie/upcoming"
+          pathname === "https://rlarnfktkd1.github.io/movie_app2/" ||
+          pathname ===
+            "https://rlarnfktkd1.github.io/movie_app2/filter/movie/now_playing" ||
+          pathname ===
+            "https://rlarnfktkd1.github.io/movie_app2/filter/movie/popular" ||
+          pathname ===
+            "https://rlarnfktkd1.github.io/movie_app2/filter/movie/top_rated" ||
+          pathname ===
+            "https://rlarnfktkd1.github.io/movie_app2/filter/movie/upcoming"
         }
       >
         <SLink to="/">
