@@ -61,10 +61,10 @@ export default withRouter(({ location: { pathname } }) => (
       <Item
         current={
           pathname === "/" ||
-          pathname === "/filter/movie/now_playing" ||
-          pathname === "/filter/movie/popular" ||
-          pathname === "/filter/movie/top_rated" ||
-          pathname === "/filter/movie/upcoming"
+          pathname === "filter/movie/now_playing" ||
+          pathname === "filter/movie/popular" ||
+          pathname === "filter/movie/top_rated" ||
+          pathname === "filter/movie/upcoming"
         }
       >
         <SLink to="/">
@@ -75,9 +75,9 @@ export default withRouter(({ location: { pathname } }) => (
       <Item
         current={
           pathname === "/tv" ||
-          pathname === "/filter/tv/popular" ||
-          pathname === "/filter/tv/top_rated" ||
-          pathname === "/filter/tv/airing_today"
+          pathname === "filter/tv/popular" ||
+          pathname === "filter/tv/top_rated" ||
+          pathname === "filter/tv/airing_today"
         }
       >
         <SLink to="/tv">
