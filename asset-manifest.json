@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/nomflix/static/js/main.d3604ad5.chunk.js",
-    "main.js.map": "/nomflix/static/js/main.d3604ad5.chunk.js.map",
-    "runtime~main.js": "/nomflix/static/js/runtime~main.76846126.js",
-    "runtime~main.js.map": "/nomflix/static/js/runtime~main.76846126.js.map",
-    "static/js/2.7cd9ef01.chunk.js": "/nomflix/static/js/2.7cd9ef01.chunk.js",
-    "static/js/2.7cd9ef01.chunk.js.map": "/nomflix/static/js/2.7cd9ef01.chunk.js.map",
-    "index.html": "/nomflix/index.html",
-    "precache-manifest.8e9f6cbccb7679c60a3ca7e8474e5ff0.js": "/nomflix/precache-manifest.8e9f6cbccb7679c60a3ca7e8474e5ff0.js",
-    "service-worker.js": "/nomflix/service-worker.js",
-    "static/media/noPosterSmall.jpg": "/nomflix/static/media/noPosterSmall.1260c83f.jpg"
+    "main.js": "/movie_app2/static/js/main.d3604ad5.chunk.js",
+    "main.js.map": "/movie_app2/static/js/main.d3604ad5.chunk.js.map",
+    "runtime~main.js": "/movie_app2/static/js/runtime~main.13079346.js",
+    "runtime~main.js.map": "/movie_app2/static/js/runtime~main.13079346.js.map",
+    "static/js/2.441b4975.chunk.js": "/movie_app2/static/js/2.441b4975.chunk.js",
+    "static/js/2.441b4975.chunk.js.map": "/movie_app2/static/js/2.441b4975.chunk.js.map",
+    "index.html": "/movie_app2/index.html",
+    "precache-manifest.c5124cbf4ea45c8ed0c40e6e470f748f.js": "/movie_app2/precache-manifest.c5124cbf4ea45c8ed0c40e6e470f748f.js",
+    "service-worker.js": "/movie_app2/service-worker.js",
+    "static/media/noPosterSmall.jpg": "/movie_app2/static/media/noPosterSmall.1260c83f.jpg"
   }
 }
