@@ -55,22 +55,22 @@ const HomePresenter = ({
     </Helmet>
     <List>
       <MenuItem>
-        <Anchor href="/filter/movie/now_playing">
+        <Anchor href="filter/movie/now_playing">
           <MenuTitle>현재 상영중</MenuTitle>
         </Anchor>
       </MenuItem>
       <MenuItem>
-        <Anchor href="/filter/movie/popular">
+        <Anchor href="filter/movie/popular">
           <MenuTitle>인기 영화</MenuTitle>
         </Anchor>
       </MenuItem>
       <MenuItem>
-        <Anchor href="/filter/movie/upcoming">
+        <Anchor href="filter/movie/upcoming">
           <MenuTitle>개봉 예정</MenuTitle>
         </Anchor>
       </MenuItem>
       <MenuItem>
-        <Anchor href="/filter/movie/top_rated">
+        <Anchor href="filter/movie/top_rated">
           <MenuTitle>높은 평점</MenuTitle>
         </Anchor>
       </MenuItem>
